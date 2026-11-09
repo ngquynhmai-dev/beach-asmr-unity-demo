@@ -1,0 +1,87 @@
+{
+  "scene": "MAI_ROOM_BAI_BIEN_DEMO14.unity",
+  "backgroundAndFoliageReport": "../RestorationReportV7.json",
+  "actualGameViewUiVerified": true,
+  "baseSceneUntouched": "MAI_ROOM_BAI_BIEN.unity",
+  "type": "Interactive workflow and layer-transition review prototype, not production cleaning masks",
+  "stepsPerObject": 14,
+  "totalSteps": 56,
+  "controls": "D toggles panel. Select object; Demo bước hiện tại plays one 1.4s step; or drag over multiple solid UV cells. Reset per object.",
+  "catalog": "Demo/CleaningSteps14.json",
+  "controller": "Demo/BeachCleaningStepDemo.cs",
+  "shader": "Demo/BeachCleaningPreview.shader",
+  "cleanArtTool": "Built-in image_gen edits",
+  "prompts": {
+    "Umbrella": "Use case: precise-object-edit. Edit target: this isolated dirty gameplay sprite. Restore this exact red-and-cream striped beach umbrella to its clean repaired state. Remove seaweed, bird droppings, sand, mold and grime. Repair the one torn front canopy panel neatly with matching fabric and a subtle stitched seam; retain the original red/cream stripe layout. Clean and oil the same wooden pole. Keep exactly the original umbrella silhouette, canopy curvature, pole length and lean.\nCRITICAL invariants: preserve the exact FULL CANVAS dimensions and registration of every unchanged contour pixel. Do NOT enlarge, zoom, center differently, change the crop, viewpoint, geometry or material identity. Do not add decorations. Keep the outside truly transparent and keep all existing open gaps truly transparent. Only clean, repair and restore the named object. High-fidelity sharp stylized photorealistic 2D game asset matching the input. No sky, ground, sea, sand patch, backdrop, contact shadow, checkerboard drawing, text or watermark.",
+    "Kiosk": "Use case: precise-object-edit. Edit target: this isolated dirty gameplay sprite. Restore this exact beach kiosk to a clean cared-for state. Remove all cups, rings, grime, mold, algae and barnacles. Clean the red/cream striped awning, make the existing glass clear and polished but preserve its original dark window backing. Refinish the existing blue front boards in the same light turquoise-blue, clean/oil the same wood frame and counter. Keep exactly the original structure, silhouette, canopy scallops and perspective.\nCRITICAL invariants: preserve the exact FULL CANVAS dimensions and registration of every unchanged contour pixel. Do NOT enlarge, zoom, center differently, change the crop, viewpoint, geometry or material identity. Do not add decorations. Keep the outside truly transparent and keep all existing open gaps truly transparent. Only clean, repair and restore the named object. High-fidelity sharp stylized photorealistic 2D game asset matching the input. No sky, ground, sea, sand patch, backdrop, contact shadow, checkerboard drawing, text or watermark.",
+    "Chair": "Use case: precise-object-edit. Edit target: this isolated dirty gameplay sprite. Restore this exact turquoise lounge chair to a clean repaired state. Remove all seaweed, loose sand, mold, stains and grime. Repair the ONE seat tear with matching turquoise cushion fabric and a subtle neat stitched seam, restore the foam underneath. Clean and oil the existing wooden frame without changing the wood color. Keep exactly the original cushion shapes, wooden frame, all legs, perspective and silhouette, including transparent open gaps between legs.\nCRITICAL invariants: preserve the exact FULL CANVAS dimensions and registration of every unchanged contour pixel. Do NOT enlarge, zoom, center differently, change the crop, viewpoint, geometry or material identity. Do not add decorations. Keep the outside truly transparent and keep all existing open gaps truly transparent. Only clean, repair and restore the named object. High-fidelity sharp stylized photorealistic 2D game asset matching the input. No sky, ground, sea, sand patch, backdrop, contact shadow, checkerboard drawing, text or watermark.",
+    "Boat": "Use case: precise-object-edit. Edit target: this isolated dirty gameplay sprite. Restore this exact blue-and-white wooden rowboat to a clean repaired state. Remove all loose leaves, sand, seaweed, barnacles, grime and mold. Replace the ONE broken plank opening in the front hull with a fitted matching wooden plank; seal and repaint with the same weathered-light-blue and white color pattern, clean the inside seats and the SAME attached rope. Keep exactly the original boat shape, all seats, hull silhouette, rope shape and loop arrangement, angle and perspective.\nCRITICAL invariants: preserve the exact FULL CANVAS dimensions and registration of every unchanged contour pixel. Do NOT enlarge, zoom, center differently, change the crop, viewpoint, geometry or material identity. Do not add decorations. Keep the outside truly transparent and keep all existing open gaps truly transparent. Only clean, repair and restore the named object. High-fidelity sharp stylized photorealistic 2D game asset matching the input. No sky, ground, sea, sand patch, backdrop, contact shadow, checkerboard drawing, text or watermark."
+  },
+  "functionalTests": [
+    {
+      "objectIndex": 0,
+      "stepCount": 14,
+      "completed": 14,
+      "otherObjectsUntouched": true
+    },
+    {
+      "objectIndex": 1,
+      "stepCount": 14,
+      "completed": 14,
+      "otherObjectsUntouched": true
+    },
+    {
+      "objectIndex": 2,
+      "stepCount": 14,
+      "completed": 14,
+      "otherObjectsUntouched": true
+    },
+    {
+      "objectIndex": 3,
+      "stepCount": 14,
+      "completed": 14,
+      "otherObjectsUntouched": true
+    },
+    {
+      "dragObjectIndex": 0,
+      "completed": 14,
+      "coveragePasses": 6
+    },
+    {
+      "dragObjectIndex": 1,
+      "completed": 14,
+      "coveragePasses": 6
+    },
+    {
+      "dragObjectIndex": 2,
+      "completed": 14,
+      "coveragePasses": 6
+    },
+    {
+      "dragObjectIndex": 3,
+      "completed": 14,
+      "coveragePasses": 6
+    },
+    {
+      "repairAfterWashing": 0,
+      "repairAfterPatching": 1
+    }
+  ],
+  "autoPreviewTest": {
+    "autoPreviewCompleted": 1,
+    "frames": 17006,
+    "readyForUser": true
+  },
+  "limitations": [
+    "Art uses dirty/clean layer interpolation with a protected repair area, not separate production masks for each dirt type.",
+    "Tool-specific brush assets, fine-grained damage art and final audio/VFX remain for a production pass.",
+    "Generated clean art can vary in surface detail from the original; confined to demo scene."
+  ],
+  "previews": [
+    "Screenshots/Demo14/00_Dirty.png",
+    "Screenshots/Demo14/07_WashFoam.png",
+    "Screenshots/Demo14/09_WashedBeforeRepair.png",
+    "Screenshots/Demo14/14_CleanRepaired.png",
+    "Screenshots/Demo14/UI_Actual_GameView.png"
+  ]
+}

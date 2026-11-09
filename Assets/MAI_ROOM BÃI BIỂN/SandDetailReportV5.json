@@ -1,0 +1,62 @@
+{
+  "version": 5,
+  "status": "Historical detail pass retained in V6 color balance; see SandColorReportV6.json",
+  "scope": "Only background sand detail. Four ExtractedV4 prop sprites, their transforms, shadows and camera script remain unchanged.",
+  "tool": "Built-in image_gen edit mode plus native Unity asset compositing",
+  "sourceBackground": "Art/MatteV3/Beach_Background_Seamless.png",
+  "background": "Art/SandDetailV5/Beach_Background_SharpSand.png",
+  "detailTexture": "Art/SandDetailV5/Sand_Detail.png",
+  "generatedSource": "exec-1fee126e-5eae-4cf4-8ccc-1360de66dcbc.png",
+  "prompt": "Use case: precise-object-edit.\nAsset type: seamless beach-sand detail texture for the existing Unity 2D room.\nInput image: reference for the exact warm pale golden sand color, sunny lighting, stylized photorealistic game-art material and fine grain scale.\nProduce ONLY a square, seamlessly tileable patch of EMPTY BEACH SAND matching the sharp sand in the bottom half of this reference. Fill the entire image edge to edge with crisp fine individual sand grains, tiny natural mineral flecks and subtle small-scale wind ripples. Consistent small texture scale everywhere; flat even material lighting, soft sunlight from upper left. High-resolution production texture, preferably 2048x2048, sharply resolved details across the whole patch with NO depth-of-field blur or soft zones. The original reference sand is finely granular, not chunky gravel and not cracked desert.\nNo horizon, sky, ocean, water, palms, grass, seaweed, shells, stones, footprints, litter, objects, props, shadows of objects, text, watermark or borders. No large dunes, broad painted swirls, repetitive obvious motifs, blur or fake sharpening halos. Match reference color and natural surface detail, not a new scene. Opaque background.",
+  "method": "Added zero-mean fine-grain detail to extended sand only. Core reference square retained; 115px feather to extension; shoreline excluded by 180px ramp. Detail contrast calibrated against sharp reference sand. Mirrored sampling avoids hard tile boundaries. Baked asset: no new runtime components or per-frame cost.",
+  "bake": {
+    "background": "Assets/MAI_ROOM BÃI BIỂN/Art/SandDetailV5/Beach_Background_SharpSand.png",
+    "detail": "Assets/MAI_ROOM BÃI BIỂN/Art/SandDetailV5/Sand_Detail.png",
+    "detailSize": [
+      1254,
+      1254
+    ],
+    "backgroundSize": [
+      3762,
+      3762
+    ],
+    "referenceHighpassRms": 0.02921363640178847,
+    "generatedHighpassRms": 0.04227771992893784,
+    "gain": 0.690993667,
+    "changedPixels": 6904702,
+    "propsModified": false
+  },
+  "validation": {
+    "consoleErrors": 0,
+    "allFourPropsInFrame": true,
+    "uncoveredPixels": 0,
+    "viewports": [
+      [
+        1080,
+        1920
+      ],
+      [
+        1080,
+        2640
+      ],
+      [
+        2000,
+        2000
+      ],
+      [
+        1024,
+        500
+      ],
+      [
+        2064,
+        2752
+      ]
+    ],
+    "nativeCropDetailRmsBefore": 0.3972195040616863,
+    "nativeCropDetailRmsAfter": 2.7222545159058344,
+    "metricNote": "RMS of local luminance residual in the native Game-view sand closeup. A diagnostic of fine detail, not a perceptual quality score."
+  },
+  "preview": "Screenshots/SandDetailV5/Beach_1080x1920.png",
+  "closeup": "Screenshots/SandDetailV5/Sand_After_Closeup.png",
+  "previousPropsReport": "ExtractionReportV4.json"
+}

@@ -1,0 +1,14 @@
+PASS 01: correct tools, failed drops, 4 snails + 1 crab visible inside layered basket; outer wall rejected.
+PASS 02: Gỡ rong biển
+PASS 03: Quét cát trên đệm
+PASS 04: Hút sạch cát trên ghế
+PASS 05: Xịt ướt chiếc ghế
+PASS 06: Phủ bọt lên đệm
+PASS 07: Chà sạch mặt đệm
+PASS 08: Xử lý vết ố
+PASS 09: Làm sạch đường may
+PASS 10: Chà khung gỗ
+PASS 11: Rửa trôi bọt bẩn
+PASS 12: Hút nước và lau khô
+PASS 13: glue -> correct leather placement -> smooth; clean, dry and fully repaired.
+PASS replay: animals, surface masks, tools and repair reset.

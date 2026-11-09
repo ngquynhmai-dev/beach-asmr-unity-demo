@@ -1,0 +1,141 @@
+{
+  "version": 7,
+  "latestBackgroundAndTests": "RestorationReportV7.json",
+  "latestArtAndTests": "ExtractionReportV4.json",
+  "goal": "Keep all four authored props inside the full viewport while continuous painted scenery covers every pixel.",
+  "runtime": "Scripts/BeachRoomViewport.cs",
+  "background": "Art/RestorationV7/Beach_Background_Restored.png",
+  "backgroundPixels": [
+    3762,
+    3762
+  ],
+  "backgroundWorldUnits": [
+    30,
+    30
+  ],
+  "referenceContentWorldUnits": [
+    10,
+    10
+  ],
+  "cameraFit": "orthographicSize = max(contentHeight/2, contentWidth/(2*viewportAspect)) * 1.02",
+  "behavior": "Reads camera pixel dimensions and refits before culling and on viewport changes. Background covers the complete view independently of prop layout, including extreme aspect ratios.",
+  "props": "V4 imagegen transparent cutouts registered to approved bounds; see ExtractionReportV4.json. No padded V1 sprites remain active.",
+  "baselineV2Tests": [
+    {
+      "width": 1080,
+      "height": 1920,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "minimumViewportMargin": 0.009803921,
+      "autoFit": true,
+      "cameraSize": 9.066667,
+      "preview": "Assets/MAI_ROOM BÃI BIỂN/Screenshots/ResponsiveV2/Beach_1080x1920.png"
+    },
+    {
+      "width": 1200,
+      "height": 1920,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "minimumViewportMargin": 0.009803921,
+      "autoFit": true,
+      "cameraSize": 8.16,
+      "preview": "Assets/MAI_ROOM BÃI BIỂN/Screenshots/ResponsiveV2/Beach_1200x1920.png"
+    },
+    {
+      "width": 1600,
+      "height": 2560,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "minimumViewportMargin": 0.009803921,
+      "autoFit": true,
+      "cameraSize": 8.16,
+      "preview": "Assets/MAI_ROOM BÃI BIỂN/Screenshots/ResponsiveV2/Beach_1600x2560.png"
+    },
+    {
+      "width": 1242,
+      "height": 2688,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "minimumViewportMargin": 0.009803921,
+      "autoFit": true,
+      "cameraSize": 11.0376806,
+      "preview": "Assets/MAI_ROOM BÃI BIỂN/Screenshots/ResponsiveV2/Beach_1242x2688.png"
+    },
+    {
+      "width": 2064,
+      "height": 2752,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "minimumViewportMargin": 0.009803921,
+      "autoFit": true,
+      "cameraSize": 6.79999971,
+      "preview": "Assets/MAI_ROOM BÃI BIỂN/Screenshots/ResponsiveV2/Beach_2064x2752.png"
+    },
+    {
+      "width": 1024,
+      "height": 500,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "minimumViewportMargin": 0.02622199,
+      "autoFit": true,
+      "cameraSize": 5.1,
+      "preview": "Assets/MAI_ROOM BÃI BIỂN/Screenshots/ResponsiveV2/Beach_1024x500.png"
+    },
+    {
+      "width": 1080,
+      "height": 2400,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "minimumViewportMargin": 0.009803951,
+      "autoFit": true,
+      "cameraSize": 11.333334,
+      "preview": "Assets/MAI_ROOM BÃI BIỂN/Screenshots/ResponsiveV2/Beach_1080x2400.png"
+    },
+    {
+      "width": 2000,
+      "height": 2000,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "minimumViewportMargin": 0.009803921,
+      "autoFit": true,
+      "cameraSize": 5.1,
+      "preview": "Assets/MAI_ROOM BÃI BIỂN/Screenshots/ResponsiveV2/Beach_2000x2000.png"
+    },
+    {
+      "width": 1080,
+      "height": 2640,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "minimumViewportMargin": 0.009803921,
+      "autoFit": true,
+      "cameraSize": 12.4666662,
+      "preview": "Assets/MAI_ROOM BÃI BIỂN/Screenshots/ResponsiveV2/Beach_1080x2640.png"
+    },
+    {
+      "width": 320,
+      "height": 1600,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "minimumViewportMargin": 0.009803921,
+      "autoFit": true,
+      "cameraSize": 25.5,
+      "preview": "Assets/MAI_ROOM BÃI BIỂN/Screenshots/ResponsiveV2/Beach_320x1600.png"
+    },
+    {
+      "width": 1920,
+      "height": 600,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "minimumViewportMargin": 0.02622205,
+      "autoFit": true,
+      "cameraSize": 5.1,
+      "preview": "Assets/MAI_ROOM BÃI BIỂN/Screenshots/ResponsiveV2/Beach_1920x600.png"
+    }
+  ],
+  "backgroundGeneration": {
+    "tool": "built-in image_gen",
+    "outpaintPrompt": "Use case: precise-object-edit / background outpainting.\nEdit target: supplied transparent square canvas. The SMALL beach image in the EXACT CENTRAL THIRD of the canvas is the fixed anchor. Fill ALL transparent space on all four sides to make ONE continuous fully opaque tropical beach background.\nIMPORTANT: DO NOT enlarge, zoom, recenter or reposition the existing central image. Keep its width and height exactly ONE THIRD of the full canvas, at the exact center. Preserve its horizon as a straight continuous horizontal line across the whole image at approximately 42 percent from the TOP of the full canvas. This is a zoomed-out background extension for a responsive 2D game, not a new composition.\nExtend UPWARD with blue tropical sky and delicate sparse white clouds, extend DOWNWARD with a large expanse of softly textured sunlit golden sand, extend LEFT and RIGHT with matching ocean, shore, beach, and a few naturally continuous palm branches at the outer edges. Extend the existing edge palm trunks naturally; no large new trees near the center. Match lighting, perspective, wave scale and sandy texture at each central boundary. Avoid a visible central square seam.\nNo main props anywhere: NO umbrella, chairs, kiosk, boat, people, buildings, giant rocks, large driftwood or text. Tiny sand details or a few shells are okay. The center and outer background must stay open to overlay 4 existing game sprite objects. Preserve the central background and its exact geometry. Render the full square canvas, preferably 3072x3072 or higher. No transparent regions, no solid-color bars, no border, no watermark.",
+    "cleanupPrompt": "Edit ONLY the two small FLOATING palm-tree fragments near the middle of this extended square beach background: one near x=33% y=35-43%, and one near x=66% y=35-43%. Remove those entire two floating tree fragments, their tiny rocky bases at the central shoreline and any visible vertical rectangular patch edges. Fill with seamless blue sky, distant ocean and beach. KEEP the two large palm trees firmly anchored along the far left and far right image edges. Keep the fixed horizon at y=42% from the top, the central small island, all sand, sky and beach framing. No zooming or repositioning. No added props or people. The result must be one continuous natural tropical background with no floating trees and no central rectangular seam. Preserve square image format and high resolution."
+  },
+  "integration": "The visual prefab includes the extended background. To reuse with the PERFECT CLEANING camera, add BeachRoomViewport to the active orthographic camera and assign that camera and the prefab's 00_Beach_Background renderer. Keep the content at 10x10 world units or adjust contentSize to match its scale."
+}

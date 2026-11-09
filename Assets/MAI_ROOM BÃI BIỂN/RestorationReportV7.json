@@ -1,0 +1,64 @@
+{
+  "version": 7,
+  "foliageHeightRule": "Horizontal edges follow camera; frond top follows umbrella bounds.max.y + 0.65 world units, clamped to viewport top. Tall screens do not lift foliage away from the umbrella.",
+  "status": "Active background and viewport edge foliage",
+  "background": "Art/RestorationV7/Beach_Background_Restored.png",
+  "palm": "Art/RestorationV7/Palm_Edge.png",
+  "tool": "Built-in image_gen edit mode",
+  "prompts": {
+    "Left": "Use case: precise-object-edit. Edit target: this exact square background crop from a layered Unity beach game. This is a high-fidelity FOCUS / DETAIL RESTORATION pass, not a new scene.\nKeep the entire original square framing, exact horizon and shoreline height, object positions, sizes, shapes, light direction and color palette unchanged.\nRestore genuinely crisp resolved details in ALL blurry areas: the turquoise sea surface, fine small ripples, white breaking wave foam filaments across the ENTIRE WIDTH including both edges; distant rocks and existing foliage; every small existing litter item, dry leaves, seaweed, shells, bottles, wrappers and especially the weathered dry driftwood if visible. Restore clear wood grain, broken ends and sharp silhouette without moving the branch. Keep the sharp pale cream sand texture and its low-saturation color unchanged.\nDeep focus from edge to edge. No depth-of-field blur, smeared brush strokes, ringing halos or artificial oversharpening. Reconstruct real natural material detail at original scale. Do not add, delete, reposition or redesign any existing content. No main gameplay props, furniture, boats, umbrella, kiosk, people, text, watermark or new litter. No extra border. Output a sharp square crop of the same composition at high resolution, ideally original 1414x1414 or higher.",
+    "Center": "Use case: precise-object-edit. Edit target: this exact square background crop from a layered Unity beach game. This is a high-fidelity FOCUS / DETAIL RESTORATION pass, not a new scene.\nKeep the entire original square framing, exact horizon and shoreline height, object positions, sizes, shapes, light direction and color palette unchanged.\nRestore genuinely crisp resolved details in ALL blurry areas: the turquoise sea surface, fine small ripples, white breaking wave foam filaments across the ENTIRE WIDTH including both edges; distant rocks and existing foliage; every small existing litter item, dry leaves, seaweed, shells, bottles, wrappers and especially the weathered dry driftwood if visible. Restore clear wood grain, broken ends and sharp silhouette without moving the branch. Keep the sharp pale cream sand texture and its low-saturation color unchanged.\nDeep focus from edge to edge. No depth-of-field blur, smeared brush strokes, ringing halos or artificial oversharpening. Reconstruct real natural material detail at original scale. Do not add, delete, reposition or redesign any existing content. No main gameplay props, furniture, boats, umbrella, kiosk, people, text, watermark or new litter. No extra border. Output a sharp square crop of the same composition at high resolution, ideally original 1414x1414 or higher.",
+    "Right": "Use case: precise-object-edit. Edit target: this exact square background crop from a layered Unity beach game. This is a high-fidelity FOCUS / DETAIL RESTORATION pass, not a new scene.\nKeep the entire original square framing, exact horizon and shoreline height, object positions, sizes, shapes, light direction and color palette unchanged.\nRestore genuinely crisp resolved details in ALL blurry areas: the turquoise sea surface, fine small ripples, white breaking wave foam filaments across the ENTIRE WIDTH including both edges; distant rocks and existing foliage; every small existing litter item, dry leaves, seaweed, shells, bottles, wrappers and especially the weathered dry driftwood if visible. Restore clear wood grain, broken ends and sharp silhouette without moving the branch. Keep the sharp pale cream sand texture and its low-saturation color unchanged.\nDeep focus from edge to edge. No depth-of-field blur, smeared brush strokes, ringing halos or artificial oversharpening. Reconstruct real natural material detail at original scale. Do not add, delete, reposition or redesign any existing content. No main gameplay props, furniture, boats, umbrella, kiosk, people, text, watermark or new litter. No extra border. Output a sharp square crop of the same composition at high resolution, ideally original 1414x1414 or higher.",
+    "Palm": "Use case: background-extraction. Asset type: transparent foreground-edge tropical coconut palm fronds for an existing sunny beach game.\nReference image is ONLY for matching natural stylized-photorealistic game-art color, light and material. Create one elegant small cluster of 2 or 3 GREEN COCONUT PALM FRONDS entering from OFF-CANVAS UPPER LEFT, tapering and curving toward the right and slightly downward. This cluster will frame the top corner of a 2D camera and may be mirrored for the other corner.\nWide, shallow silhouette (about 2.5 times wider than tall). Leaf stems originate beyond the left/top canvas edge so the crop feels attached to an off-screen palm, not floating. Fresh medium green with a few sunlit yellow-green edges; bright soft tropical sunlight from upper left. Beautiful crisp individual slender leaflets, clean antialiased alpha with transparent gaps between leaflets. No blue sky remnants, no matte halo, no sand, no trunk, no coconuts, no full tree, no grass, no shadows on a ground plane, no other objects, text, border or watermark. Fill the wide upper-left part of the canvas with the fronds but leave surrounding area truly transparent. Keep fine leaf tips sharp at gameplay resolution."
+  },
+  "method": "Three overlapping restoration panels. Restored high-frequency detail is combined with source low-frequency color to retain V6 palette; original sand is retained outside restoration/litter masks. Edge palms are separate transparent SpriteRenderers, sortingOrder 2, behind all gameplay props. Horizontal edges follow the camera; vertical height follows the umbrella, not the top of a tall screen.",
+  "bake": {
+    "background": "Assets/MAI_ROOM BÃI BIỂN/Art/RestorationV7/Beach_Background_Restored.png",
+    "changedPixels": 3764633,
+    "colors": "Low-frequency source RGB retained",
+    "propsUnchanged": true
+  },
+  "tests": [
+    {
+      "width": 1080,
+      "height": 1920,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "margin": 0.0223129988,
+      "path": "D:/unity project/demo scene 027/demo room/Assets/MAI_ROOM BÃI BIỂN/Screenshots/RestorationV7/Beach_1080x1920.png"
+    },
+    {
+      "width": 1080,
+      "height": 2640,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "margin": 0.0223129988,
+      "path": "D:/unity project/demo scene 027/demo room/Assets/MAI_ROOM BÃI BIỂN/Screenshots/RestorationV7/Beach_1080x2640.png"
+    },
+    {
+      "width": 2000,
+      "height": 2000,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "margin": 0.02231294,
+      "path": "D:/unity project/demo scene 027/demo room/Assets/MAI_ROOM BÃI BIỂN/Screenshots/RestorationV7/Beach_2000x2000.png"
+    },
+    {
+      "width": 1024,
+      "height": 500,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "margin": 0.0340400934,
+      "path": "D:/unity project/demo scene 027/demo room/Assets/MAI_ROOM BÃI BIỂN/Screenshots/RestorationV7/Beach_1024x500.png"
+    },
+    {
+      "width": 2064,
+      "height": 2752,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "margin": 0.02231294,
+      "path": "D:/unity project/demo scene 027/demo room/Assets/MAI_ROOM BÃI BIỂN/Screenshots/RestorationV7/Beach_2064x2752.png"
+    }
+  ],
+  "scope": "Background restoration and foliage; four main gameplay prop sprites unchanged."
+}

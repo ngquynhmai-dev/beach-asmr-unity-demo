@@ -1,0 +1,221 @@
+{
+  "version": 4,
+  "status": "ACTIVE prop assets; background detail updated by V5",
+  "latestBackgroundReport": "SandColorReportV6.json",
+  "scene": "MAI_ROOM_BAI_BIEN.unity",
+  "prefab": "Prefabs/MAI_ROOM_BAI_BIEN_Dirty.prefab",
+  "tool": "built-in image_gen transparent-background edit mode",
+  "change": "Replaced all four padded V1 sprite references with actual transparent imagegen extractions. Replaced background containing residual umbrella edges with a clean empty plate blended into the extended background. Separate soft shadow sprites.",
+  "preservation": "Approved composition and intended bounding positions retained through per-sprite registration. The re-extracted RGB is NOT pixel-identical to the source; small model-generated detail/shape variations are present. Earlier V3 source-only contour drafts are NOT active.",
+  "background": "Art/SandColorV6/Beach_Background_PaleSand.png",
+  "source": "Art/DirtyV1/Source_ApprovedDirty.png",
+  "backgroundDimensions": [
+    3762,
+    3762
+  ],
+  "layers": [
+    {
+      "name": "Umbrella_Dirty_Torn",
+      "object": "10_Umbrella_Dirty_Torn",
+      "sortingOrder": 10,
+      "asset": "Art/ExtractedV4/Umbrella_Dirty_Torn.png",
+      "generationFile": "exec-fadbc67e-8a49-40f3-b502-21f699cde2ef.png",
+      "targetBoundsTopLeft": [
+        40,
+        31,
+        587,
+        583
+      ],
+      "prompt": "Use case: background-extraction.\nEdit target: approved square 1254x1254 beach room.\nExtract ONLY the ENTIRE beach umbrella at the upper left: the red-and-cream striped torn canopy, wooden finial, leaning wooden pole all the way to its foot on the sand, and attached hanging seaweed. Make everything else truly transparent.\nCRITICAL REGISTRATION: Keep the ORIGINAL FULL SQUARE CANVAS. Keep every umbrella pixel at its exact original location, original size, original lean and perspective. Umbrella bounding area is approximately x=40..630, y=30..620 in the 1254x1254 image. Do NOT center or enlarge the isolated umbrella. Do NOT redraw, redesign or restyle it. Preserve the torn hole, stains, moss, seams and exact shape.\nCut tightly around the real silhouette with clean antialiased alpha. All blue sky, sea, clouds and all sand must be completely transparent, INCLUDING the sky visible through the torn hole and open gaps. Remove the cast shadow on sand; this will be a separate layer. Include fine seaweed strands with transparent space between them. No matte halo or extra painted outline. No chair, kiosk, boat, palms, bottles, ground patch, background rectangle, checkerboard drawing, text or watermark."
+    },
+    {
+      "name": "Kiosk_Dirty",
+      "object": "15_Kiosk_Dirty",
+      "sortingOrder": 15,
+      "asset": "Art/ExtractedV4/Kiosk_Dirty.png",
+      "generationFile": "exec-7a753229-99e6-4eb9-a65a-0aa837659f39.png",
+      "targetBoundsTopLeft": [
+        652,
+        95,
+        577,
+        546
+      ],
+      "prompt": "Use case: background-extraction. Edit target: approved square beach room. Extract ONLY the complete wooden BEACH KIOSK in the UPPER RIGHT, including red-and-cream awning, roof bar, vertical side posts, counter, front boards, cups on counter, attached algae at bottom. Its full silhouette runs approximately x650..1235,y90..650. No neighboring umbrella, chair or boat.\nKeep ORIGINAL FULL SQUARE CANVAS. Preserve exact original position, size, angle, perspective, identity, textures, colors, stains and damage. Do not center, enlarge, redesign, simplify or redraw the object. Make all other scene content truly transparent including all sky, sea, sand, ground patches and cast shadow. Tight professional antialiased silhouette with no opaque background halos, no sand fringes, no sky fragments and no extra outline. Include fine strands but clean the open gaps. No text, watermark or checkerboard drawing."
+    },
+    {
+      "name": "LoungeChair_Dirty_Torn",
+      "object": "20_LoungeChair_Dirty_Torn",
+      "sortingOrder": 20,
+      "asset": "Art/ExtractedV4/LoungeChair_Dirty_Torn.png",
+      "generationFile": "exec-400db0e0-c2da-40a8-8d25-6a7640a3795a.png",
+      "targetBoundsTopLeft": [
+        26,
+        596,
+        574,
+        526
+      ],
+      "prompt": "Use case: background-extraction. Edit target: approved square beach room. Extract ONLY the complete turquoise LOUNGE CHAIR in the LOWER LEFT, including cushion with one tear exposing foam, all wooden frame and legs, attached seaweed and dirt. Its full silhouette runs approximately x20..600,y595..1100. The open spaces between legs and below the seat must be transparent. No umbrella or boat.\nKeep ORIGINAL FULL SQUARE CANVAS. Preserve exact original position, size, angle, perspective, identity, textures, colors, stains and damage. Do not center, enlarge, redesign, simplify or redraw the object. Make all other scene content truly transparent including all sky, sea, sand, ground patches and cast shadow. Tight professional antialiased silhouette with no opaque background halos, no sand fringes, no sky fragments and no extra outline. Include fine strands but clean the open gaps. No text, watermark or checkerboard drawing."
+    },
+    {
+      "name": "Boat_Dirty_Holed",
+      "object": "30_Boat_Dirty_Holed",
+      "sortingOrder": 30,
+      "asset": "Art/ExtractedV4/Boat_Dirty_Holed.png",
+      "generationFile": "exec-a9967ae0-165b-4363-a0c7-8d4dc9cf9b83.png",
+      "targetBoundsTopLeft": [
+        638,
+        635,
+        600,
+        560
+      ],
+      "prompt": "Use case: background-extraction. Edit target: approved square beach room. Extract ONLY the complete damaged blue-and-white ROWBOAT in the LOWER RIGHT, including barnacles, algae, inside seats and loose leaves inside the boat, one broken plank hole in front hull, and its attached ROPE trailing to the left and curling on the sand. Approximate full silhouette x630..1240,y635..1195. Keep interior inside boat opaque; only actual exterior surrounding beach and spaces between rope loops transparent. No chair or kiosk.\nKeep ORIGINAL FULL SQUARE CANVAS. Preserve exact original position, size, angle, perspective, identity, textures, colors, stains and damage. Do not center, enlarge, redesign, simplify or redraw the object. Make all other scene content truly transparent including all sky, sea, sand, ground patches and cast shadow. Tight professional antialiased silhouette with no opaque background halos, no sand fringes, no sky fragments and no extra outline. Include fine strands but clean the open gaps. No text, watermark or checkerboard drawing."
+    }
+  ],
+  "shadows": [
+    {
+      "name": "Umbrella",
+      "ellipses": [
+        [
+          214,
+          577,
+          194,
+          28,
+          8,
+          0.21
+        ],
+        [
+          434,
+          611,
+          22,
+          7,
+          0,
+          0.35
+        ]
+      ]
+    },
+    {
+      "name": "Kiosk",
+      "ellipses": [
+        [
+          794,
+          619,
+          253,
+          32,
+          0,
+          0.2
+        ],
+        [
+          939,
+          638,
+          266,
+          10,
+          0,
+          0.26
+        ]
+      ]
+    },
+    {
+      "name": "Chair",
+      "ellipses": [
+        [
+          269,
+          1016,
+          251,
+          64,
+          15,
+          0.2
+        ],
+        [
+          51,
+          963,
+          24,
+          8,
+          0,
+          0.32
+        ],
+        [
+          329,
+          1116,
+          28,
+          8,
+          0,
+          0.34
+        ],
+        [
+          579,
+          1062,
+          23,
+          8,
+          0,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "Boat",
+      "ellipses": [
+        [
+          947,
+          1084,
+          244,
+          48,
+          -27,
+          0.24
+        ],
+        [
+          874,
+          1137,
+          101,
+          16,
+          -27,
+          0.26
+        ]
+      ]
+    }
+  ],
+  "shadowNotes": "Code-native soft alpha effects, independent of photo background. Four transparent sprites at sortingOrder 5.",
+  "tests": [
+    {
+      "width": 1080,
+      "height": 1920,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "margin": 0.0223129988,
+      "path": "D:/unity project/demo scene 027/demo room/Assets/MAI_ROOM BÃI BIỂN/Screenshots/ExtractedV4/Beach_1080x1920.png"
+    },
+    {
+      "width": 1080,
+      "height": 2640,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "margin": 0.0223129988,
+      "path": "D:/unity project/demo scene 027/demo room/Assets/MAI_ROOM BÃI BIỂN/Screenshots/ExtractedV4/Beach_1080x2640.png"
+    },
+    {
+      "width": 2000,
+      "height": 2000,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "margin": 0.02231294,
+      "path": "D:/unity project/demo scene 027/demo room/Assets/MAI_ROOM BÃI BIỂN/Screenshots/ExtractedV4/Beach_2000x2000.png"
+    },
+    {
+      "width": 1024,
+      "height": 500,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "margin": 0.0340400934,
+      "path": "D:/unity project/demo scene 027/demo room/Assets/MAI_ROOM BÃI BIỂN/Screenshots/ExtractedV4/Beach_1024x500.png"
+    },
+    {
+      "width": 2064,
+      "height": 2752,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "margin": 0.02231294,
+      "path": "D:/unity project/demo scene 027/demo room/Assets/MAI_ROOM BÃI BIỂN/Screenshots/ExtractedV4/Beach_2064x2752.png"
+    }
+  ],
+  "consoleErrors": 0,
+  "scope": "Visual demo only; no cleaning interactions added."
+}

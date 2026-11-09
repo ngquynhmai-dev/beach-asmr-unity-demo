@@ -1,0 +1,532 @@
+{
+  "objects": [
+    {
+      "key": "Umbrella",
+      "label": "Ô che nắng",
+      "steps": [
+        {
+          "title": "Gỡ rong mắc trên tán",
+          "tool": "Kẹp",
+          "instruction": "Kéo qua các dải rong trên mép ô.",
+          "clean": 0.08,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Phủi cát khô",
+          "tool": "Chổi mềm",
+          "instruction": "Quét mặt vải và các đường gân.",
+          "clean": 0.16,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Cạo vết bám khô",
+          "tool": "Dao nhựa",
+          "instruction": "Làm bong phân chim và cặn bám, không cắt vải.",
+          "clean": 0.23,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Xịt làm ẩm",
+          "tool": "Vòi phun",
+          "instruction": "Phun đều để làm mềm vết bẩn.",
+          "clean": 0.28,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0.4
+        },
+        {
+          "title": "Phủ dung dịch tẩy mốc",
+          "tool": "Bình xịt",
+          "instruction": "Xử lý vùng nấm mốc trên vải.",
+          "clean": 0.34,
+          "repair": 0,
+          "foam": 0.25,
+          "wet": 0.5
+        },
+        {
+          "title": "Đánh bọt mặt vải",
+          "tool": "Bọt biển",
+          "instruction": "Tạo bọt theo các múi ô.",
+          "clean": 0.43,
+          "repair": 0,
+          "foam": 0.8,
+          "wet": 0.5
+        },
+        {
+          "title": "Chà sạch từng múi",
+          "tool": "Bàn chải",
+          "instruction": "Chải nhẹ theo chiều sợi vải.",
+          "clean": 0.58,
+          "repair": 0,
+          "foam": 0.6,
+          "wet": 0.6
+        },
+        {
+          "title": "Xả sạch bọt",
+          "tool": "Vòi nước",
+          "instruction": "Rửa từ chóp xuống mép tán.",
+          "clean": 0.72,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0.85
+        },
+        {
+          "title": "Sấy khô vải",
+          "tool": "Máy sấy",
+          "instruction": "Làm khô trước khi vá.",
+          "clean": 0.79,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Cắt gọn mép rách",
+          "tool": "Kéo",
+          "instruction": "Tỉa sợi vải xơ quanh đúng vết rách.",
+          "clean": 0.81,
+          "repair": 0.08,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Đặt miếng vá đồng màu",
+          "tool": "Miếng vá",
+          "instruction": "Căn miếng vải theo sọc đỏ–kem.",
+          "clean": 0.84,
+          "repair": 0.45,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Khâu cố định miếng vá",
+          "tool": "Kim chỉ",
+          "instruction": "Khâu kín mép rách, giữ đường cong tán.",
+          "clean": 0.88,
+          "repair": 1,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Lau và dưỡng cán gỗ",
+          "tool": "Khăn + dầu",
+          "instruction": "Lau sạch cán, dưỡng gỗ và siết chốt.",
+          "clean": 0.96,
+          "repair": 1,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Phủ chống thấm, kiểm tra",
+          "tool": "Bình phủ",
+          "instruction": "Hoàn thiện lớp bảo vệ và nghiệm thu.",
+          "clean": 1,
+          "repair": 1,
+          "foam": 0,
+          "wet": 0
+        }
+      ]
+    },
+    {
+      "key": "Chair",
+      "label": "Ghế nằm",
+      "steps": [
+        {
+          "title": "Gỡ rong và rác mắc ghế",
+          "tool": "Kẹp",
+          "instruction": "Gỡ rong khỏi nệm và khung gỗ.",
+          "clean": 0.08,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Hút lớp cát dày",
+          "tool": "Máy hút",
+          "instruction": "Hút cát trên đệm và khe ghế.",
+          "clean": 0.17,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Quét khe nệm",
+          "tool": "Chổi mềm",
+          "instruction": "Làm sạch các nếp gấp và mép may.",
+          "clean": 0.24,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Xịt dung dịch khử mốc",
+          "tool": "Bình xịt",
+          "instruction": "Phun vào các mảng mốc trên lưng ghế.",
+          "clean": 0.32,
+          "repair": 0,
+          "foam": 0.2,
+          "wet": 0.3
+        },
+        {
+          "title": "Ủ bọt giặt nệm",
+          "tool": "Bọt giặt",
+          "instruction": "Phủ bọt đều mặt nệm.",
+          "clean": 0.41,
+          "repair": 0,
+          "foam": 0.8,
+          "wet": 0.5
+        },
+        {
+          "title": "Chà lưng và mặt ghế",
+          "tool": "Bàn chải",
+          "instruction": "Chà từng vùng theo chiều vải.",
+          "clean": 0.55,
+          "repair": 0,
+          "foam": 0.6,
+          "wet": 0.6
+        },
+        {
+          "title": "Hút xả nước bẩn",
+          "tool": "Máy giặt hút",
+          "instruction": "Hút nước bẩn ra khỏi nệm.",
+          "clean": 0.68,
+          "repair": 0,
+          "foam": 0.1,
+          "wet": 0.6
+        },
+        {
+          "title": "Sấy khô nệm",
+          "tool": "Máy sấy",
+          "instruction": "Sấy khô kỹ phần đệm.",
+          "clean": 0.77,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Tỉa mép vải rách",
+          "tool": "Kéo",
+          "instruction": "Làm gọn đúng lỗ rách trên mặt ngồi.",
+          "clean": 0.8,
+          "repair": 0.08,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Bù lớp mút thiếu",
+          "tool": "Mút mới",
+          "instruction": "Lấp phần mút lộ và bị hao hụt.",
+          "clean": 0.83,
+          "repair": 0.38,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Vá và khâu mặt nệm",
+          "tool": "Kim chỉ",
+          "instruction": "Dùng vải xanh cùng tông để vá kín.",
+          "clean": 0.87,
+          "repair": 1,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Chà nhám khung ghế",
+          "tool": "Giấy nhám",
+          "instruction": "Làm sạch bề mặt gỗ và cạnh xước.",
+          "clean": 0.92,
+          "repair": 1,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Dưỡng gỗ, siết khớp",
+          "tool": "Dầu + tua vít",
+          "instruction": "Dưỡng khung và kiểm tra các ốc nối.",
+          "clean": 0.98,
+          "repair": 1,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Chải nệm, đặt ghế hoàn thiện",
+          "tool": "Khăn sạch",
+          "instruction": "Chải đều vải và kiểm tra ghế hoàn tất.",
+          "clean": 1,
+          "repair": 1,
+          "foam": 0,
+          "wet": 0
+        }
+      ]
+    },
+    {
+      "key": "Kiosk",
+      "label": "Quầy bãi biển",
+      "steps": [
+        {
+          "title": "Thu gom cốc và rác",
+          "tool": "Găng tay",
+          "instruction": "Dọn cốc, ống hút và rác trên quầy.",
+          "clean": 0.08,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Gỡ rong quanh chân quầy",
+          "tool": "Kẹp",
+          "instruction": "Gỡ rong và cặn bám chân gỗ.",
+          "clean": 0.16,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Cạo cặn bám cứng",
+          "tool": "Dao nhựa",
+          "instruction": "Làm bong cặn và bẩn khô.",
+          "clean": 0.24,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Phủi bụi mái và khe gỗ",
+          "tool": "Chổi",
+          "instruction": "Quét mái che và các khe ván.",
+          "clean": 0.3,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Làm ẩm mái vải",
+          "tool": "Vòi phun",
+          "instruction": "Làm mềm bẩn trên mái sọc.",
+          "clean": 0.36,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0.4
+        },
+        {
+          "title": "Phủ bọt mái che",
+          "tool": "Bọt giặt",
+          "instruction": "Phủ dung dịch lên bạt đỏ–kem.",
+          "clean": 0.44,
+          "repair": 0,
+          "foam": 0.8,
+          "wet": 0.5
+        },
+        {
+          "title": "Chà sạch mái vải",
+          "tool": "Bàn chải",
+          "instruction": "Chải nấm mốc theo từng múi bạt.",
+          "clean": 0.55,
+          "repair": 0,
+          "foam": 0.5,
+          "wet": 0.6
+        },
+        {
+          "title": "Xả mái và lau khô",
+          "tool": "Vòi + khăn",
+          "instruction": "Xả sạch và lau phần mái.",
+          "clean": 0.65,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0.2
+        },
+        {
+          "title": "Xịt dung dịch lau kính",
+          "tool": "Bình lau kính",
+          "instruction": "Phun lên hai ô kính bẩn.",
+          "clean": 0.72,
+          "repair": 0,
+          "foam": 0.3,
+          "wet": 0.4
+        },
+        {
+          "title": "Gạt kính trong sạch",
+          "tool": "Cây gạt",
+          "instruction": "Gạt kính theo đường thẳng từ trên xuống.",
+          "clean": 0.81,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Tẩy vết trên mặt quầy",
+          "tool": "Khăn tẩy",
+          "instruction": "Xử lý vòng cốc, vết nước và dầu mỡ.",
+          "clean": 0.87,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Làm mới ván xanh",
+          "tool": "Chà nhám + sơn",
+          "instruction": "Làm sạch và sơn lại đúng tông xanh cũ.",
+          "clean": 0.93,
+          "repair": 1,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Dưỡng gỗ và siết ốc",
+          "tool": "Dầu + tua vít",
+          "instruction": "Dưỡng viền gỗ, mặt quầy và siết chốt.",
+          "clean": 0.98,
+          "repair": 1,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Khử khuẩn và nghiệm thu",
+          "tool": "Khăn sạch",
+          "instruction": "Lau hoàn thiện toàn bộ quầy.",
+          "clean": 1,
+          "repair": 1,
+          "foam": 0,
+          "wet": 0
+        }
+      ]
+    },
+    {
+      "key": "Boat",
+      "label": "Thuyền gỗ",
+      "steps": [
+        {
+          "title": "Nhặt lá và rác trong thuyền",
+          "tool": "Găng tay",
+          "instruction": "Thu gom lá khô trong lòng thuyền.",
+          "clean": 0.08,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Gỡ rong và dây mắc",
+          "tool": "Kẹp",
+          "instruction": "Gỡ rong khỏi mạn và dây neo.",
+          "clean": 0.16,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Cạo hà bám thân vỏ",
+          "tool": "Dao cạo",
+          "instruction": "Cạo các cụm hà bám ngoài mạn.",
+          "clean": 0.26,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Hút cát và bùn",
+          "tool": "Máy hút",
+          "instruction": "Hút cát ở đáy và các khe.",
+          "clean": 0.33,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Làm ướt thân thuyền",
+          "tool": "Vòi phun",
+          "instruction": "Phun nước từ lòng ra mạn ngoài.",
+          "clean": 0.39,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0.5
+        },
+        {
+          "title": "Phủ bọt tẩy rêu",
+          "tool": "Bình bọt",
+          "instruction": "Phủ bọt lên vùng xanh rêu.",
+          "clean": 0.46,
+          "repair": 0,
+          "foam": 0.8,
+          "wet": 0.6
+        },
+        {
+          "title": "Chà đáy và mạn thuyền",
+          "tool": "Bàn chải",
+          "instruction": "Chà mặt trong, ghế và mạn ngoài.",
+          "clean": 0.6,
+          "repair": 0,
+          "foam": 0.6,
+          "wet": 0.6
+        },
+        {
+          "title": "Xả sạch cặn bẩn",
+          "tool": "Vòi nước",
+          "instruction": "Xả nước bẩn ra khỏi lòng thuyền.",
+          "clean": 0.72,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0.8
+        },
+        {
+          "title": "Sấy khô vùng cần sửa",
+          "tool": "Máy sấy",
+          "instruction": "Làm khô ván quanh lỗ thủng.",
+          "clean": 0.78,
+          "repair": 0,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Tháo miếng ván hỏng",
+          "tool": "Kìm + búa",
+          "instruction": "Gỡ phần ván vỡ quanh đúng lỗ thủng.",
+          "clean": 0.81,
+          "repair": 0.08,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Lắp miếng ván thay",
+          "tool": "Ván + đinh",
+          "instruction": "Căn và cố định miếng ván mới.",
+          "clean": 0.85,
+          "repair": 0.55,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Trám kín và kiểm tra khe",
+          "tool": "Keo trám",
+          "instruction": "Trám mép ván để bịt kín lỗ.",
+          "clean": 0.88,
+          "repair": 1,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Chà nhám và sơn lại",
+          "tool": "Nhám + sơn",
+          "instruction": "Khôi phục đúng màu xanh–trắng.",
+          "clean": 0.97,
+          "repair": 1,
+          "foam": 0,
+          "wet": 0
+        },
+        {
+          "title": "Lau dây neo, kiểm tra hoàn thiện",
+          "tool": "Khăn + chổi",
+          "instruction": "Làm sạch dây và kiểm tra thân vỏ.",
+          "clean": 1,
+          "repair": 1,
+          "foam": 0,
+          "wet": 0
+        }
+      ]
+    }
+  ]
+}

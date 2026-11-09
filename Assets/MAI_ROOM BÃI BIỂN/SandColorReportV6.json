@@ -1,0 +1,64 @@
+{
+  "version": 6,
+  "status": "Current background color balance",
+  "background": "Art/SandColorV6/Beach_Background_PaleSand.png",
+  "previousBackground": "Art/SandDetailV5/Beach_Background_SharpSand.png",
+  "tool": "Built-in image_gen color-look edit plus native Unity color transfer",
+  "lookReference": "Art/SandColorV6/Sand_Color_Look.png",
+  "prompt": "Use case: lighting-weather (COLOR GRADING ONLY).\nInput image 1 is the edit target: a detailed warm-orange beach sand closeup.\nInput image 2 is ONLY the color reference: the existing room's pale golden cream sand in its lower half, between and underneath where the game props sit.\nChange ONLY the color grade of image 1 to match the lighter, less saturated pale-golden cream sand of reference image 2. Reduce the excessive orange saturation by approximately 23 percent and slightly raise brightness, while keeping a natural warm sandy hue, not gray or white. Match the reference sand's cream highlights and gentle peach midtones.\nPreserve the exact full image 1 canvas, all grain texture, ripple positions, fine flecks, fine-detail contrast, sharpness and surface topology. No blur, no smoothing, no painted-over texture, no new objects, no new rocks, no footprints, no borders or text. This is a subtle production color-match pass, not a redesign or new texture. Keep an opaque background.",
+  "method": "Matched mean RGB of extended sand to reference core sand using constant RGB offsets with the existing feather mask. Grain topology and high-frequency detail retained; no resampling, blur or sharpening. Sky, sea, core sand and four props are unchanged.",
+  "bake": {
+    "asset": "Assets/MAI_ROOM BÃI BIỂN/Art/SandColorV6/Beach_Background_PaleSand.png",
+    "referenceMeanRGB255": "(250.634, 201.265, 153.510)",
+    "beforeMeanRGB255": "(248.644, 185.306, 123.618)",
+    "afterMeanRGB255": "(250.010, 201.306, 153.618)",
+    "offsetRGB255": "(1.990, 15.959, 29.892)",
+    "changedPixels": 6904702,
+    "propsModified": false,
+    "corePreserved": true
+  },
+  "tests": [
+    {
+      "width": 1080,
+      "height": 1920,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "margin": 0.0223129988,
+      "path": "D:/unity project/demo scene 027/demo room/Assets/MAI_ROOM BÃI BIỂN/Screenshots/SandColorV6/Beach_1080x1920.png"
+    },
+    {
+      "width": 1080,
+      "height": 2640,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "margin": 0.0223129988,
+      "path": "D:/unity project/demo scene 027/demo room/Assets/MAI_ROOM BÃI BIỂN/Screenshots/SandColorV6/Beach_1080x2640.png"
+    },
+    {
+      "width": 2000,
+      "height": 2000,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "margin": 0.02231294,
+      "path": "D:/unity project/demo scene 027/demo room/Assets/MAI_ROOM BÃI BIỂN/Screenshots/SandColorV6/Beach_2000x2000.png"
+    },
+    {
+      "width": 1024,
+      "height": 500,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "margin": 0.0340400934,
+      "path": "D:/unity project/demo scene 027/demo room/Assets/MAI_ROOM BÃI BIỂN/Screenshots/SandColorV6/Beach_1024x500.png"
+    },
+    {
+      "width": 2064,
+      "height": 2752,
+      "uncoveredPixels": 0,
+      "allFourPropsInFrame": true,
+      "margin": 0.02231294,
+      "path": "D:/unity project/demo scene 027/demo room/Assets/MAI_ROOM BÃI BIỂN/Screenshots/SandColorV6/Beach_2064x2752.png"
+    }
+  ],
+  "preview": "Screenshots/SandColorV6/Beach_1080x1920.png",
+  "closeup": "Screenshots/SandColorV6/Sand_Pale_Closeup.png"
+}
